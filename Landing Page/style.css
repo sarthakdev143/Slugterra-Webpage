@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("Background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+#nav-ul {
+    font-family: fantasy;
+    display: flex;
+}
+
+#nav-con {
+    margin-left: 16%;
+    display: flex;
+}
+
+#nav-ul #dropdown {
+    width: 2vw;
+    position: absolute;
+    transition: 0.4s;
+}
+
+#game:hover #dropdown,
+#store:hover #dropdown {
+    rotate: 180deg;
+}
+
+#nav-ul #update {
+    font-size: 1.5vw;
+    margin-top: 50%;
+}
+
+#nav-ul #game {
+    font-size: 1.5vw;
+    margin-top: 60%;
+}
+
+
+#nav-ul #game-dropdown-div {
+    display: none;
+    position: absolute;
+    background-color: white;              /* drop down */
+    max-width: 7.5vw;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#game:hover #game-dropdown-div {
+    display: block;
+}
+
+#nav-ul #store {
+    font-size: 1.5vw;
+    margin-top: 80%;
+}
+
+
+#nav-ul #store-div #store-dropdown-div {
+    display: none;
+    position: absolute;
+    background-color: white;                 /* drop down */
+    max-width: 7.5vw; 
+    z-index: 1;
+    cursor: pointer;
+}
+
+#store:hover #store-dropdown-div {
+    display: block;
+}
+
+#nav-ul #community {
+    font-size: 1.5vw;
+    margin-top: 39%;
+}
+
+#nav-ul #update:hover,
+#nav-ul #community:hover{
+    border-top: 0.3vw solid black;
+    cursor: pointer;
+}
+
+#games-div,
+#store-div,
+#community-div {
+    margin-left: 20%;
+    display: flex;
+}
+
+#nav-ul #ls-con {
+    margin-left: 28%;
+    display: flex;
+    padding-top: 2%;
+
+    #login-image {
+        width: 1.3vw;
+        transform: translate(-0.2vw, 0.13vw);
+    }
+}
+
+#nav-ul #log #login,
+#nav-ul #sigup #sign-up {
+    text-decoration: none;
+    padding: 1vw;
+    float: right;
+
+    margin-left: 1.45em;
+    border: 0.2vw solid black;
+    color: black;
+    border-radius: 1vw;
+    font-size: 1.3vw;
+
+    transition: ease 0.4s;
+}
+
+#nav-ul #log #login:hover,
+#nav-ul #sigup #sign-up:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+#nav-ul #logo {
+    width: 15.3vw;
+    margin-left: 15%;
+    margin-top: 1em;
+}
+
+#nav-ul #seekout {
+    width: 10vw;
+    rotate: 45deg;    
+    translate: -22vw 10vw;
+    transition: all ease 0.3s;
+    position: absolute;    
+
+    user-zoom: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+#nav-ul #seekout:hover {
+    cursor: pointer;
+    translate: -17vw 10vw;
+    rotate: 40deg;
+}
+
+#background {
+    width: 95%;
+    margin-left: 2.5%;
+
+    border-radius: 1em;
+    margin-top: 1vh;
+}
+
+#on-vid-con #page-logo {
+    width: 20vw;
+    transform: translate(40%, -180%);
+    opacity: 0.7;
+}
+
+#on-vid-con #page-logo:hover {
+    opacity: 1;
+}
+
+#text-con {
+    font-size: 1.4vw;
+    transform: translate(7.6%, -76vh);
+
+    #link-about:hover {
+        color: aqua;
+        text-decoration: none;
+    }
+}
+
+#text-con #watch-trailer,
+#text-con #learn-more {
+    color: black;
+    border: 2px black;
+    border-radius: 5px;
+
+    text-decoration: none;
+    background-color: rgba(255, 0, 0, 0.795);
+    padding: 1vw;
+
+    font-family: fantasy;
+
+    transition: ease 0.4s;
+
+    opacity: 0.6;
+}
+
+#text-con #watch-trailer:hover,
+#text-con #learn-more:hover {
+    background-color: black;
+    color: rgba(255, 0, 0, 0.795);
+    opacity: 1;
+}
+
+#text-con #know-more {
+    color: rgba(255, 255, 255, 0.565);
+}
+
+#text-con #know-more:hover {
+    color: white;
+    text-decoration: dashed;
+}
